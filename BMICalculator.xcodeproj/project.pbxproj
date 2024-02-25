@@ -13,6 +13,8 @@
 		8D494E552B8B578F00B1DBBC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D494E532B8B578F00B1DBBC /* Main.storyboard */; };
 		8D494E572B8B579000B1DBBC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D494E562B8B579000B1DBBC /* Assets.xcassets */; };
 		8D494E5A2B8B579000B1DBBC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D494E582B8B579000B1DBBC /* LaunchScreen.storyboard */; };
+		8D494E652B8B595300B1DBBC /* BMIModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D494E642B8B595300B1DBBC /* BMIModel.swift */; };
+		8D494E682B8B59AE00B1DBBC /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D494E672B8B59AE00B1DBBC /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		8D494E562B8B579000B1DBBC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D494E592B8B579000B1DBBC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D494E5B2B8B579000B1DBBC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D494E642B8B595300B1DBBC /* BMIModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIModel.swift; sourceTree = "<group>"; };
+		8D494E672B8B59AE00B1DBBC /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,31 @@
 			children = (
 				8D494E4D2B8B578F00B1DBBC /* AppDelegate.swift */,
 				8D494E4F2B8B578F00B1DBBC /* SceneDelegate.swift */,
-				8D494E512B8B578F00B1DBBC /* ViewController.swift */,
+				8D494E662B8B596100B1DBBC /* Model */,
+				8D494E612B8B58D700B1DBBC /* View */,
 				8D494E532B8B578F00B1DBBC /* Main.storyboard */,
 				8D494E562B8B579000B1DBBC /* Assets.xcassets */,
 				8D494E582B8B579000B1DBBC /* LaunchScreen.storyboard */,
 				8D494E5B2B8B579000B1DBBC /* Info.plist */,
 			);
 			path = BMICalculator;
+			sourceTree = "<group>";
+		};
+		8D494E612B8B58D700B1DBBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8D494E512B8B578F00B1DBBC /* ViewController.swift */,
+				8D494E672B8B59AE00B1DBBC /* ResultViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8D494E662B8B596100B1DBBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8D494E642B8B595300B1DBBC /* BMIModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +160,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D494E682B8B59AE00B1DBBC /* ResultViewController.swift in Sources */,
 				8D494E522B8B578F00B1DBBC /* ViewController.swift in Sources */,
 				8D494E4E2B8B578F00B1DBBC /* AppDelegate.swift in Sources */,
+				8D494E652B8B595300B1DBBC /* BMIModel.swift in Sources */,
 				8D494E502B8B578F00B1DBBC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
