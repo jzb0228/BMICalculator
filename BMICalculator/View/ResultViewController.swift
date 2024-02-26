@@ -20,5 +20,10 @@ class ResultViewController: UIViewController {
             resultLabel.text = String(format: "BMI: %.2f\nCategory: %@", bmiModel.bmi, bmiModel.category)
         }
     }
+    
+    @IBAction func back(_ sender: Any) {
+        dismiss(animated: true)
+    }
+    
 }
 
