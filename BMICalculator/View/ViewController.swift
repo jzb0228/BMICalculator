@@ -39,7 +39,7 @@ class ViewController: UIViewController {
             performSegue(withIdentifier: "resultSegue", sender: self)
 
         } else {
-            showAlert(title: "Invalid Input", message: "Please enter valid values for height (feet and inches) and weight.")
+            showAlert(title: "Invalid Input", message: "Please enter valid values for height and weight.")
         }
     }
 
